@@ -12,3 +12,6 @@ def saludar_con_paramtros(request, nombre:str, apellido:str):
     nombre = nombre.capitalize()
     apellido = apellido.capitalize()
     return HttpResponse(f"Hola {nombre} {apellido} desde jango con paramtros!!!")
+
+def index(request):
+    return render(request, "principal/index.html")
