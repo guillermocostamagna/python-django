@@ -14,4 +14,8 @@ def saludar_con_paramtros(request, nombre:str, apellido:str):
     return HttpResponse(f"Hola {nombre} {apellido} desde jango con paramtros!!!")
 
 def index(request):
-    return render(request, "principal/index.html")
+    from datetime import datetime
+    
+    año_actual = datetime.now().year
+    contexto = {"año":año_actual}
+    return render(request, "principal/index.html", contexto)
