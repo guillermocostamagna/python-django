@@ -37,4 +37,18 @@ def tirar_dado(request):
         'fecha' : datetime.now().strftime('%H:%M:%S:%f'),
     }
     return render(request, 'principal/dados.html', context=datos)
+
+def ejercicio1(request, nombre:str, apellido:str):
+    nombre = nombre.capitalize()
+    apellido = apellido.capitalize()
+    
+    datos = {
         
+        'nombre': nombre,
+        'apellido' : apellido,
+    }
+    return render(request, "principal/ejercicio1.html" , context=datos)
+
+def ver_notas(request):
+    lista_notas=[10,5,8,6,9,8,1,7,6]
+    return render(request, 'principal/notas.html', {"notas":lista_notas})

@@ -25,4 +25,6 @@ urlpatterns = [
     path('saludar3/<str:nombre>/<str:apellido>/', views.saludar_con_paramtros),
     path('', views.index),
     path('tirar_dado/', views.tirar_dado),
+    path('ejercicio1/<str:nombre>/<str:apellido>/', views.ejercicio1),
+    path('ver_notas/', views.ver_notas),
 ]
