@@ -8,12 +8,14 @@
 <body>
     <h1>"Listado de Notas"</h1>
     <br/>
-    {% for nota in notas %}
-        {% if nota > 6 %}
-            <p style="color: green;">{{nota}} : Aprobado</p>
-        {% else %}    
-            <p style="color: red;">{{nota}} : No Aprobado</p>
-        {% endif %}
-    {% endfor %}
+    <div style="color: aquamarine; font-size: large; text-align: center;">
+        {% for nota in notas %}
+            {% if nota > 6 %}
+                <p style="color: green;">{{nota}} : Aprobado</p>
+            {% else %}    
+                <p style="color: red;">{{nota}} : No Aprobado</p>
+            {% endif %}
+        {% endfor %}
+    </div>
 </body>
 </html>
