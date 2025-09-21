@@ -9,7 +9,7 @@
     <h1>"Listado de Clientes"</h1>
     <br/>
     {% for persona in clientes %}
-        <p>{{ persona.cod_persona }} - {{persona.nom_persona}}, {{persona.ape_persona}}</p>    
+        <p>{{ persona.cod_persona }} - {{persona.nom_persona}}, {{persona.ape_persona}} - {{persona.fec_nac|date:"d/m/Y"}}</p>    
     {% endfor %}
     
 </body>
