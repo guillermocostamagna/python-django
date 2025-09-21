@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Clientes</title>
+</head>
+<body>
+    <h1>"Listado de Clientes"</h1>
+    <br/>
+    {% for persona in clientes %}
+        <p>{{ persona.cod_persona }} - {{persona.nom_persona}}, {{persona.ape_persona}}</p>    
+    {% endfor %}
+    
+</body>
+</html>
