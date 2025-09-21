@@ -52,3 +52,13 @@ def ejercicio1(request, nombre:str, apellido:str):
 def ver_notas(request):
     lista_notas=[10,5,8,6,9,8,1,7,6]
     return render(request, 'principal/notas.html', {"notas":lista_notas})
+
+def ejercicio2(request):
+    usuarios = [
+        {"nombre":"guille", "edad": "50"},
+        {"nombre":"Cari", "edad": "53"},
+        {"nombre":"Enzo", "edad": "19"},
+        {"nombre":"Anna", "edad": "16"},
+    ]
+    return render(request, 'principal/ejercicio2.html', {"usuarios":usuarios})
+    
